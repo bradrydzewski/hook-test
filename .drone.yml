@@ -1,0 +1,22 @@
+
+workspace:
+  base: /go
+  path: src/github.com/bradrydzewski/hook-test
+
+clone:
+  depth: 50
+
+script:
+  build:
+    image: golang:1.4.2
+    commands:
+      - go version
+      - echo pwd
+      - echo $GOPATH
+      - echo hello
+      - sleep 5
+      - echo world.
+      - sleep 5
+      - echo goodbye
+      - sleep 5
+      - echo world.
