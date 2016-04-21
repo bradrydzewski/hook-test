@@ -10,6 +10,7 @@ script:
   build:
     image: golang:1.4.2
     commands:
+      - env
       - go version
       - echo pwd
       - echo $GOPATH
