@@ -1,3 +1,10 @@
+build:
+  image: node:5.0.0
+  commands:
+    - cat /root/.netrc
+    - npm install
+
+---
 
 workspace:
   base: /go
